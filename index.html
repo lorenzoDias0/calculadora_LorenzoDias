@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <h1 id="CalculadoraFera">Calculadora mais fera do universo</h1>
+        <div class="telinha" id="telinha">0</div>
+        <div class="buttons">
+            <button class="clear" onclick="apagarTudo()">C</button>
+            <button class="clear" onclick="apagarUltimo()"><-</button>
+            <button class="operator" onclick="mostrarNaTelinha('(')">(</button>
+            <button class="operator" onclick="mostrarNaTelinha(')')">)</button>
+            
+            <button onclick="mostrarNaTelinha('7')">7</button>
+            <button onclick="mostrarNaTelinha('8')">8</button>
+            <button onclick="mostrarNaTelinha('9')">9</button>
+            <button class="operator" onclick="mostrarNaTelinha('/')">/</button>
+            
+            <button onclick="mostrarNaTelinha('4')">4</button>
+            <button onclick="mostrarNaTelinha('5')">5</button>
+            <button onclick="mostrarNaTelinha('6')">6</button>
+            <button class="operator" onclick="mostrarNaTelinha('*')">*</button>
+            
+            <button onclick="mostrarNaTelinha('1')">1</button>
+            <button onclick="mostrarNaTelinha('2')">2</button>
+            <button onclick="mostrarNaTelinha('3')">3</button>
+            <button class="operator" onclick="mostrarNaTelinha('-')">-</button>
+            
+            <button class="zero" onclick="mostrarNaTelinha('0')">0</button>
+            <button onclick="mostrarNaTelinha('.')">.</button>
+            <button class="operator" onclick="mostrarNaTelinha('+')">+</button>
+            
+            <button class="equals" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

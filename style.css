@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #28302d;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.telinha {
+    background-color: #a8b4b2;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 24px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #242424;
+}
+
+button.operator {
+    background-color: #2d463f;
+}
+
+button.operator:hover {
+    background-color: #3c5c53;
+}
+
+button.clear {
+    background-color: #09835a;
+    color: black;
+}
+
+button.clear:hover {
+    background-color: #b5b5b5;
+}
+
+button.equals {
+    background-color: #45806f ;
+    grid-column: span 4;
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+#CalculadoraFera {
+    text-align: center;
+    color: #45806f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
